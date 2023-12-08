@@ -1,0 +1,22 @@
+{
+  "name": "task",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "json-server --watch db.json",
+    "start": "concurrently \"npm run serve\" \"npm run dev\""
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "concurrently": "^8.2.2",
+    "json-server": "^0.17.4",
+    "slim-select": "^2.7.1"
+  }
+}
